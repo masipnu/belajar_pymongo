@@ -1,0 +1,21 @@
+import pymongo # mengimpor modul pymongo
+
+# Konfigurasi mongodb
+client = pymongo.MongoClient("mongodb+srv://masipnupro:Bismillah@cluster0.iubqgry.mongodb.net/?retryWrites=true&w=majority")
+
+# Konfigurasi database
+db = client['data_siswa']
+
+# Konfigurasi koleksi
+my_collections = db['jurusan_rpl']
+
+# Melakukan looping data
+print("Daftar siswa-siswi RPL")
+for x in my_collections.find({"Jurusan":"RPL"}):
+	print(x)
+
+print("")
+
+print("Daftar siswa-siswi PBS")
+for x in my_collections.find({"Jurusan":"PBS"}):
+	print(x)

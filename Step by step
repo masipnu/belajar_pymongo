@@ -1,0 +1,23 @@
+# Mengecek versi python
+python --version
+
+# Mengecek versi pip
+pip --version
+
+# Mengecek daftar modul python yang terinstall
+pip list
+
+# Upgrade pip
+python -m pip install --upgrade pip
+
+# Install library pymongo
+pip install pymongo
+
+# Install library pymongo[srv]
+pip install "pymongo[srv]"
+
+# ================================
+
+# Menginstall library flask
+pip install flask
+
